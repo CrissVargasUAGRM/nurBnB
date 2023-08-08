@@ -12,7 +12,7 @@ public class ReviewUtils {
         return model;
     }
 
-    public static Commend jpaToUserJpaModel(ReviewJpaModel jpaModel) throws BusinessRuleValidationException {
-        return new Commend(jpaModel.getUser().getId(), jpaModel.getCommendValue(), jpaModel.getCommend(), jpaModel.getProperty(), jpaModel.getValoration());
+    public static Commend jpaToReviewJpaModel(ReviewJpaModel jpaModel) throws BusinessRuleValidationException {
+        return new Commend(jpaModel.getUserId(), jpaModel.getCommendValue(), jpaModel.getCommend(), jpaModel.getProperty(), jpaModel.getValoration());
     }
 }

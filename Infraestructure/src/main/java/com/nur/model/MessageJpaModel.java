@@ -1,10 +1,15 @@
 package com.nur.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
 @Table(name = "Messages")
+@Getter
+@Setter
 public class MessageJpaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,9 +19,10 @@ public class MessageJpaModel {
     @Column(nullable = false, name = "DESCRIPTION")
     private String description;
 
-    @ManyToOne
-    private UserJpaModel user;
+    @Column(nullable = false, name = "USERID")
+    private UUID userId;
 
-    @ManyToOne
-    private ConversationJpaModel conversation;
+    @Column(nullable = false, name = "CONVERSATIONID")
+    private UUID conversationId;
+
 }

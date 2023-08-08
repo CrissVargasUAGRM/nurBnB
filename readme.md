@@ -15,3 +15,11 @@ Permite crear una conversacion para asociarla a los mensajes.
 * Guardar reseña.
 Permite almacenar una reseña hecha por los usuarios.
 
+### Documentacion del equipo
+[Documento](https://docs.google.com/document/d/1ctMvLt7WrdaclpEVs_lc00JvitnaAzqT/edit?usp=sharing&ouid=108472729931632387414&rtpof=true&sd=true)
+
+### Diagrama de la capa de dominio
+[Diagrama](https://app.diagrams.net/#G1NdxCVJAnyQx-nnikFv1alrcMbbL-YmZg)
+
+### Video
+[Video](https://drive.google.com/file/d/1n0S0qPNsUaS4XPdLFANnYk_NnVxXfGXp/view?usp=sharing)

@@ -25,7 +25,6 @@ public class PersonaJpaModel {
     @Column(nullable = false, name = "CIPERSON")
     private String ci;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "USERID", referencedColumnName = "ID_USER")
-    private UserJpaModel user;
+    @Column(nullable = false, name = "USERID")
+    private UUID userId;
 }

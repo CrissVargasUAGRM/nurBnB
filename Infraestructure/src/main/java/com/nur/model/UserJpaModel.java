@@ -28,12 +28,4 @@ public class UserJpaModel {
     @Column(nullable = false, name = "ACCOUNTTYPE")
     private String accountType;
 
-    @OneToOne(mappedBy = "user")
-    private PersonaJpaModel person;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
-    private MessageJpaModel message;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
-    private ReviewJpaModel review;
 }

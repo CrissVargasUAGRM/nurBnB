@@ -28,6 +28,6 @@ public class ReviewJpaModel {
     @Column(name = "PROPERTY", nullable = false)
     private String property;
 
-    @ManyToOne
-    private UserJpaModel user;
+    @Column(nullable = false, name = "USERID")
+    private UUID userId;
 }

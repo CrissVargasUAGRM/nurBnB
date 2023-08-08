@@ -26,6 +26,4 @@ public class ConversationJpaModel {
     @Column(nullable = false, name = "STATUS")
     private String status;
 
-    @OneToMany(mappedBy = "conversation", cascade = CascadeType.REMOVE)
-    private MessageJpaModel messages;
 }
