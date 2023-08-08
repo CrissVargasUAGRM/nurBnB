@@ -2,7 +2,7 @@
 
 El microservicio tiene por finalidad almacenar y manipular la informacion de la reseña y de los usuarios, asi mismo separar en capas los diferentes modulos de la implementacion.
 
-![image micro service](https://cdn.discordapp.com/attachments/741462786898657325/1138347872027414548/image.png)
+![image micro service](https://cdn.discordapp.com/attachments/741462786898657325/1138436085584773151/image.png)
 
 * Registro de los usuarios.
 permite crear un usuario nuevo.
