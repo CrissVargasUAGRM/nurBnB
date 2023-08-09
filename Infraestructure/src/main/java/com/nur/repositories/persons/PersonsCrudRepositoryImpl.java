@@ -3,20 +3,31 @@ package com.nur.repositories.persons;
 import com.nur.messenger.factories.IPersonaFactory;
 import com.nur.messenger.personas.Personas;
 import com.nur.model.PersonaJpaModel;
+import com.nur.repositories.IPersonRepository;
 import com.nur.utils.PersonsUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Objects;
 import java.util.UUID;
 
-public class PersonsCrudRepositoryImpl implements IPersonaFactory {
+public class PersonsCrudRepositoryImpl implements IPersonRepository {
     @Autowired
     private IPersonsCrudRepository personsCrudRepository;
 
     @Override
-    public Personas createPerson(String name, String lastName, String ci, UUID userId) {
-        Personas person = new Personas(name, lastName, ci, userId);
-        PersonaJpaModel model = PersonsUtils.personToJpaEntity(person);
+    public UUID update(Personas person) {
+        Personas persons = new Personas(person.getName(), person.getLastName(), person.getCi(), person.getUserId());
+        PersonaJpaModel model = PersonsUtils.personToJpaEntity(persons);
         personsCrudRepository.save(model);
-        return person;
+        return personsCrudRepository.save(model).getId();
+    }
+
+    @Override
+    public Personas getById(UUID id) {
+        try {
+            return PersonsUtils.jpaToPersons(Objects.requireNonNull(personsCrudRepository.findById(id).orElse(null)));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

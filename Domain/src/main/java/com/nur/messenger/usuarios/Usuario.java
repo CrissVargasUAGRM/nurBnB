@@ -7,7 +7,6 @@ import lombok.Getter;
 
 import java.util.UUID;
 
-@Builder
 public class Usuario extends AggregateRoot {
     public String username;
 

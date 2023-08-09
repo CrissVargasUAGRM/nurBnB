@@ -2,9 +2,11 @@ package com.nur.rewiev;
 
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.core.Entity;
+import lombok.Builder;
 
 import java.util.UUID;
 
+@Builder
 public class Commend extends Entity {
     public UUID userId;
     public String valoracion;

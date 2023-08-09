@@ -2,9 +2,11 @@ package com.nur.messenger.personas;
 
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.core.Entity;
+import lombok.Builder;
 
 import java.util.UUID;
 
+@Builder
 public class Personas extends Entity {
     public String name;
     public String lastName;

@@ -3,9 +3,11 @@ package com.nur.messenger.conversacion;
 
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.core.Entity;
+import lombok.Builder;
 
 import java.util.UUID;
 
+@Builder
 public class Messages extends Entity {
     public UUID userId;
     public String description;
