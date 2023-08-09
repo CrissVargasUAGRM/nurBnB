@@ -23,3 +23,6 @@ Permite almacenar una reseña hecha por los usuarios.
 
 ### Video
 [Video](https://drive.google.com/file/d/1n0S0qPNsUaS4XPdLFANnYk_NnVxXfGXp/view?usp=sharing)
+
+### Repositorio
+[Github](https://github.com/CrissVargasUAGRM/nurBnB)
