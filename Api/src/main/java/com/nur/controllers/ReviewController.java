@@ -1,6 +1,8 @@
 package com.nur.controllers;
 
 import an.awesome.pipelinr.Pipeline;
+import com.nur.command.review.create.CreateReviewCommand;
+import com.nur.dto.ReviewDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +20,9 @@ public class ReviewController {
         this.pipeline = pipeline;
     }
 
-    @PostMapping("/create")
-    public UUID crateReview(){
-        return UUID.randomUUID();
+    @PostMapping("/")
+    public ReviewDTO crateReview(ReviewDTO reviewDTO){
+        CreateReviewCommand reviewCommand = new CreateReviewCommand(reviewDTO);
+        return reviewCommand.execute(pipeline);
     }
 }
