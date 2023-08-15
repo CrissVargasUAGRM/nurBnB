@@ -1,7 +1,6 @@
 package com.nur.repositories.conversations;
 
-import com.nur.messenger.conversacion.Conversacion;
-import com.nur.messenger.factories.IConversationFactory;
+import com.nur.model.Conversacion;
 import com.nur.model.ConversationJpaModel;
 import com.nur.repositories.IConversationRepository;
 import com.nur.utils.ConversationUtils;

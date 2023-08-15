@@ -2,9 +2,9 @@ package com.nur.util;
 
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.dto.UserDTO;
-import com.nur.messenger.usuarios.EmailValueObject;
-import com.nur.messenger.usuarios.PasswordValueObject;
-import com.nur.messenger.usuarios.Usuario;
+import com.nur.model.EmailValueObject;
+import com.nur.model.PasswordValueObject;
+import com.nur.model.Usuario;
 
 public class UserMapper {
     public static UserDTO from(Usuario user){

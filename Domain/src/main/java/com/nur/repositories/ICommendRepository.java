@@ -1,8 +1,7 @@
 package com.nur.repositories;
 
 import com.nur.core.BusinessRuleValidationException;
-import com.nur.messenger.conversacion.Conversacion;
-import com.nur.rewiev.Commend;
+import com.nur.model.Commend;
 
 import java.util.UUID;
 

@@ -1,7 +1,7 @@
 package com.nur.repositories;
 
 import com.nur.core.BusinessRuleValidationException;
-import com.nur.messenger.usuarios.Usuario;
+import com.nur.model.Usuario;
 
 import java.util.UUID;
 

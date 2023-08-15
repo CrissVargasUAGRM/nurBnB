@@ -1,7 +1,6 @@
 package com.nur.repositories.persons;
 
-import com.nur.messenger.factories.IPersonaFactory;
-import com.nur.messenger.personas.Personas;
+import com.nur.model.Personas;
 import com.nur.model.PersonaJpaModel;
 import com.nur.repositories.IPersonRepository;
 import com.nur.utils.PersonsUtils;

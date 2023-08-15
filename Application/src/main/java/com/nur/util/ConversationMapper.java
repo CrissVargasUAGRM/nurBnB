@@ -1,7 +1,7 @@
 package com.nur.util;
 
 import com.nur.dto.ConversationDTO;
-import com.nur.messenger.conversacion.Conversacion;
+import com.nur.model.Conversacion;
 
 public class ConversationMapper {
     public static ConversationDTO from(Conversacion conversation){

@@ -2,8 +2,8 @@ package com.nur.command.conversation.get;
 
 import an.awesome.pipelinr.Command;
 import com.nur.dto.ConversationDTO;
-import com.nur.messenger.conversacion.Conversacion;
-import com.nur.messenger.factories.IConversationFactory;
+import com.nur.model.Conversacion;
+import com.nur.factories.conversation.IConversationFactory;
 import com.nur.repositories.IConversationRepository;
 import com.nur.util.ConversationMapper;
 import org.springframework.stereotype.Component;

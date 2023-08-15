@@ -1,7 +1,7 @@
 package com.nur.util;
 
 import com.nur.dto.MessageDTO;
-import com.nur.messenger.conversacion.Messages;
+import com.nur.model.Messages;
 
 import java.util.UUID;
 

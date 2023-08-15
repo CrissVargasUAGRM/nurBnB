@@ -2,8 +2,8 @@ package com.nur.command.person.create;
 
 import an.awesome.pipelinr.Command;
 import com.nur.dto.PersonDTO;
-import com.nur.messenger.factories.IPersonaFactory;
-import com.nur.messenger.personas.Personas;
+import com.nur.factories.persons.IPersonaFactory;
+import com.nur.model.Personas;
 import com.nur.repositories.IPersonRepository;
 import com.nur.util.PersonMapper;
 

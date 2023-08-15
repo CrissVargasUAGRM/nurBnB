@@ -3,7 +3,7 @@ package com.nur.repositories.reviews;
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.model.ReviewJpaModel;
 import com.nur.repositories.ICommendRepository;
-import com.nur.rewiev.Commend;
+import com.nur.model.Commend;
 import com.nur.utils.ReviewUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,6 +1,6 @@
 package com.nur.repositories;
 
-import com.nur.messenger.personas.Personas;
+import com.nur.model.Personas;
 
 import java.util.UUID;
 

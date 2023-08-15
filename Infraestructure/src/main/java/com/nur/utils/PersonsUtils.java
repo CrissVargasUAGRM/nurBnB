@@ -1,6 +1,6 @@
 package com.nur.utils;
 
-import com.nur.messenger.personas.Personas;
+import com.nur.model.Personas;
 import com.nur.model.PersonaJpaModel;
 
 public class PersonsUtils {

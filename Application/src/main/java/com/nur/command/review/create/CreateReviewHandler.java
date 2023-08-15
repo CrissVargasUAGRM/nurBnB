@@ -3,10 +3,9 @@ package com.nur.command.review.create;
 import an.awesome.pipelinr.Command;
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.dto.ReviewDTO;
-import com.nur.messenger.factories.ICommendFactory;
+import com.nur.factories.commends.ICommendFactory;
 import com.nur.repositories.ICommendRepository;
-import com.nur.rewiev.Commend;
-import com.nur.util.PersonMapper;
+import com.nur.model.Commend;
 import com.nur.util.ReviewMapper;
 
 import java.util.UUID;

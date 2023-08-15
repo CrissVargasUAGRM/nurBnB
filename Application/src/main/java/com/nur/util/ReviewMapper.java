@@ -2,8 +2,8 @@ package com.nur.util;
 
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.dto.ReviewDTO;
-import com.nur.rewiev.Commend;
-import com.nur.rewiev.ValorationValueObject;
+import com.nur.model.Commend;
+import com.nur.valueObjects.ValorationValueObject;
 
 import java.util.UUID;
 

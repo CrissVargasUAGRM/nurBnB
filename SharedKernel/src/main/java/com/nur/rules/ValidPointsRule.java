@@ -11,7 +11,7 @@ public class ValidPointsRule implements IBusinessRule {
 
     @Override
     public boolean isValid() {
-        return this.value == 0 || this.value < 0;
+        return this.value != 0 || this.value < 0;
     }
 
     @Override

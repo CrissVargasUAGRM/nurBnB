@@ -2,7 +2,7 @@ package com.nur.utils;
 
 import com.nur.core.BusinessRuleValidationException;
 import com.nur.model.ReviewJpaModel;
-import com.nur.rewiev.Commend;
+import com.nur.model.Commend;
 
 public class ReviewUtils {
     public static ReviewJpaModel reviewToJpaEntity(Commend review){

@@ -1,7 +1,6 @@
 package com.nur.repositories.messages;
 
-import com.nur.messenger.conversacion.Messages;
-import com.nur.messenger.factories.IMessageFactory;
+import com.nur.model.Messages;
 import com.nur.model.MessageJpaModel;
 import com.nur.repositories.IMessageRepository;
 import com.nur.utils.MessageUtils;

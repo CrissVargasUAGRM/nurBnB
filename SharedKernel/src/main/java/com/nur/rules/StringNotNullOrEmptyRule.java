@@ -15,6 +15,6 @@ public class StringNotNullOrEmptyRule implements IBusinessRule {
     }
 
     public boolean isValid(){
-        return _value == null || _value.isEmpty();
+        return _value != null || !_value.isEmpty();
     }
 }

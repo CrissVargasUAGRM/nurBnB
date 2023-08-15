@@ -1,6 +1,6 @@
 package com.nur.repositories;
 
-import com.nur.messenger.conversacion.Conversacion;
+import com.nur.model.Conversacion;
 
 import java.util.UUID;
 

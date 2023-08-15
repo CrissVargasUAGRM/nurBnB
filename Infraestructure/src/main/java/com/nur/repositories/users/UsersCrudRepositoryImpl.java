@@ -1,8 +1,7 @@
 package com.nur.repositories.users;
 
 import com.nur.core.BusinessRuleValidationException;
-import com.nur.messenger.factories.IUserFactory;
-import com.nur.messenger.usuarios.Usuario;
+import com.nur.model.Usuario;
 import com.nur.model.UserJpaModel;
 import com.nur.repositories.IUserRepository;
 import com.nur.utils.UsersUtils;

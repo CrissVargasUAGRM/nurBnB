@@ -1,16 +1,20 @@
 package com.nur.core;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
 
+@Getter
 public abstract class Entity {
     public UUID id;
-    private Collection<DomainEvent> _domainEvents;
-    public Collection<DomainEvent> domainEvents;
+    public List<DomainEvent> domainEvents;
 
     public Entity() {
-        this._domainEvents = new ArrayList<DomainEvent>();
+        this.id = UUID.randomUUID();
+        this.domainEvents = new ArrayList<>();
     }
 
     public UUID getId() {
@@ -21,16 +25,16 @@ public abstract class Entity {
         this.id = id;
     }
 
-    public Collection<DomainEvent> getDomainEvents() {
-        return domainEvents;
+    public List<DomainEvent> getDomainEvents() {
+        return new ArrayList<>(domainEvents);
     }
 
     public void addDomainEvent(DomainEvent event){
-        _domainEvents.add(event);
+        domainEvents.add(event);
     }
 
     public void clearDomainEvents(){
-        _domainEvents.clear();
+        domainEvents.clear();
     }
 
     protected void checkRule(IBusinessRule rule) throws Exception {

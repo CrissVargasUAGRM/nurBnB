@@ -1,10 +1,9 @@
 package com.nur.command.message.create;
 
 import an.awesome.pipelinr.Command;
-import com.nur.core.BusinessRuleValidationException;
 import com.nur.dto.MessageDTO;
-import com.nur.messenger.conversacion.Messages;
-import com.nur.messenger.factories.IMessageFactory;
+import com.nur.model.Messages;
+import com.nur.factories.messages.IMessageFactory;
 import com.nur.repositories.IMessageRepository;
 import com.nur.util.MessageMapper;
 

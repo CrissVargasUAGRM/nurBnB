@@ -2,9 +2,9 @@ package com.nur.command.review.get;
 
 import an.awesome.pipelinr.Command;
 import com.nur.dto.ReviewDTO;
-import com.nur.messenger.factories.ICommendFactory;
+import com.nur.factories.commends.ICommendFactory;
 import com.nur.repositories.ICommendRepository;
-import com.nur.rewiev.Commend;
+import com.nur.model.Commend;
 import com.nur.util.ReviewMapper;
 
 import java.util.UUID;

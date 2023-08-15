@@ -1,6 +1,6 @@
 package com.nur.utils;
 
-import com.nur.messenger.conversacion.Messages;
+import com.nur.model.Messages;
 import com.nur.model.MessageJpaModel;
 
 public class MessageUtils {

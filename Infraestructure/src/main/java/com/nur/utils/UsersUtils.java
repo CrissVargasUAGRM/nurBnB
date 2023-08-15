@@ -1,8 +1,7 @@
 package com.nur.utils;
 
 import com.nur.core.BusinessRuleValidationException;
-import com.nur.messenger.usuarios.EmailValueObject;
-import com.nur.messenger.usuarios.Usuario;
+import com.nur.model.Usuario;
 import com.nur.model.UserJpaModel;
 
 public class UsersUtils {

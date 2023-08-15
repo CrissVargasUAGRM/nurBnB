@@ -2,8 +2,8 @@ package com.nur.command.users.get;
 
 import an.awesome.pipelinr.Command;
 import com.nur.dto.UserDTO;
-import com.nur.messenger.factories.IUserFactory;
-import com.nur.messenger.usuarios.Usuario;
+import com.nur.factories.users.IUserFactory;
+import com.nur.model.Usuario;
 import com.nur.repositories.IUserRepository;
 import com.nur.util.UserMapper;
 

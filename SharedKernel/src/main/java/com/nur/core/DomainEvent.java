@@ -1,8 +1,11 @@
 package com.nur.core;
 
+import lombok.Getter;
+
 import java.time.LocalDate;
 import java.util.UUID;
 
+@Getter
 public abstract class DomainEvent {
     public LocalDate occurredOn;
     public UUID id;

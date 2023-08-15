@@ -1,7 +1,7 @@
 package com.nur.util;
 
 import com.nur.dto.PersonDTO;
-import com.nur.messenger.personas.Personas;
+import com.nur.model.Personas;
 
 import java.util.UUID;
 
